@@ -1,7 +1,5 @@
 
 
----
-
 # HR Workflow Designer
 
 HR Workflow Designer is an interactive, node-based workflow builder built using React Flow. It enables users to visually design, connect, and simulate HR processes with real-time execution and JSON import/export capabilities.
@@ -10,82 +8,71 @@ HR Workflow Designer is an interactive, node-based workflow builder built using 
 
 ## Overview
 
-This project provides a visual interface for constructing workflow pipelines commonly used in HR systems. Users can create connections between different stages such as task assignment, approval, and completion, and simulate the execution of the workflow step-by-step.
+This project provides a visual interface for constructing workflow pipelines commonly used in HR systems. Users can create connections between different stages such as task assignment, approval, and completion, and simulate execution step-by-step.
 
-The goal of this project is to demonstrate how complex processes can be represented using node-based architectures and interactive user interfaces.
+The application demonstrates how complex processes can be represented using graph-based UI and interactive frontend design.
 
 ---
 
-## Key Features
+## Features
 
-### Workflow Design
+* Visual workflow creation using connected nodes
+* Drag-and-connect functionality for defining flow
+* Step-by-step workflow execution (Run Workflow)
+* Custom node types:
 
-* Create workflows using connected nodes
-* Visual representation of process flow from start to end
-* Structured layout with aligned nodes
-
-### Drag and Connect
-
-* Drag connections between nodes to define relationships
-* Dynamic edge creation using React Flow
-* Supports multiple connections
-
-### Workflow Simulation
-
-* Step-by-step execution using "Run Workflow"
-* Active node highlighting during execution
-* Simulates real-world process flow
-
-### Custom Nodes
-
-* Distinct node types such as:
-
-  * Start Node
-  * Task Node
-  * Approval Node
-  * End Node
-* Styled with a clean pastel UI
-
-### Import and Export
-
-* Export workflows as JSON files
-* Import previously saved workflows
-* Enables persistence and reusability
-
-### Interactive UI
-
-* Node selection and highlighting
-* Clean layout with sidebar and configuration panel
-* Responsive and user-friendly design
+  * Start
+  * Task
+  * Approval
+  * End
+* Approval and rejection flow simulation
+* Import workflow from JSON
+* Export workflow to JSON
+* Interactive node selection and highlighting
 
 ---
 
 ## Tech Stack
 
-* **Frontend:** React, TypeScript
-* **Visualization:** React Flow (@xyflow/react)
-* **Build Tool:** Vite
-* **Styling:** CSS
+* React
+* TypeScript
+* React Flow (@xyflow/react)
+* Vite
+* CSS
 
 ---
 
-## Architecture
-
-The application follows a component-based structure:
+## Project Structure
 
 ```bash
-src/
-  App.tsx              # Main workflow canvas and logic
-  Sidebar.tsx          # Node selection panel
-  NodeConfigPanel.tsx  # Node configuration UI
+flowforge-hr/
+  assets/
+    main-ui.png
+    run.png
+    export.png
+  src/
+    App.tsx
+    Sidebar.tsx
+    NodeConfigPanel.tsx
+  public/
+  README.md
 ```
 
-### Core Concepts
+---
 
-* **Nodes:** Represent workflow steps
-* **Edges:** Represent transitions between steps
-* **State Management:** Handles nodes, edges, and execution flow
-* **Event Handling:** Enables drag, connect, and click interactions
+## Screenshots
+
+### Main UI
+
+![Main UI](assets/main-ui.png)
+
+### Workflow Execution
+
+![Run Workflow](assets/run.png)
+
+### Export Feature
+
+![Export](assets/export.png)
 
 ---
 
@@ -112,37 +99,23 @@ npm run dev
 
 ---
 
-## Usage Guide
+## Usage
 
-1. Open the application in the browser
-2. View the default workflow structure
-3. Drag from one node to another to create connections
-4. Click on nodes to interact with them
-5. Click **Run Workflow** to simulate execution
-6. Use **Export** to download the workflow
-7. Use **Import** to load an existing workflow
+* Connect nodes by dragging from one node to another
+* Click **Run Workflow** to simulate execution
+* Observe node highlighting as the workflow progresses
+* Use **Export** to download the workflow as JSON
+* Use **Import** to load a saved workflow
 
 ---
 
 ## Future Enhancements
 
-* Conditional branching (approve/reject logic)
-* Auto-layout and node positioning
-* Workflow persistence using backend services
-* Role-based workflows
-* Advanced node configuration options
-
----
-
-## Learning Outcomes
-
-This project demonstrates:
-
-* Building interactive graph-based UIs
-* Managing complex state in React
-* Implementing drag-and-drop interactions
-* Designing scalable frontend architectures
-* Working with real-world workflow systems
+* Auto layout for node positioning
+* Advanced conditional branching
+* Backend integration for saving workflows
+* Role-based workflow control
+* Improved node configuration panel
 
 ---
 
@@ -151,6 +124,5 @@ This project demonstrates:
 Sania Tanweer
 
 ---
-
 
 
