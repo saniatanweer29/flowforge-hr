@@ -1,78 +1,116 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+Here is your **updated README without the license section**:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# HR Workflow Designer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+An interactive workflow builder built using React Flow. This application allows users to design, connect, and simulate HR workflows with a clean and intuitive interface.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Drag and connect nodes to build workflows
+* Run workflow simulation with step-by-step highlighting
+* Custom node types (Start, Task, Approval, End)
+* Import workflow from JSON
+* Export workflow to JSON
+* Interactive node selection and visualization
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* React
+* TypeScript
+* React Flow (@xyflow/react)
+* Vite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Project Structure
+
+```
+src/
+  App.tsx
+  Sidebar.tsx
+  NodeConfigPanel.tsx
+assets/
+  main-ui.png
+  drag-connect.png
+  run-workflow.png
+  node-selected.png
+  export-import.png
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Screenshots
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Main UI
+
+![Main UI](assets/main-ui.png)
+
+### Drag and Connect
+
+![Drag Connect](assets/drag-connect.png)
+
+### Run Workflow
+
+![Run Workflow](assets/run-workflow.png)
+
+### Node Interaction
+
+![Node Selected](assets/node-selected.png)
+
+### Export and Import
+
+![Export Import](assets/export-import.png)
+
+---
+
+## Installation and Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/saniatanweer29/flowforge-hr.git
+cd flowforge-hr
 ```
-=======
-# flowforge-hr
-Interactive HR workflow designer built with React Flow featuring drag-and-drop nodes, workflow simulation, and JSON import/export.
->>>>>>> 43254091f75654d75f96b1bdf2c284f03631ee96
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Usage
+
+* Drag from one node to another to create connections
+* Click “Run Workflow” to simulate execution
+* Use “Export” to download the workflow as JSON
+* Use “Import” to load a saved workflow
+
+---
+
+## Future Improvements
+
+* Auto layout for nodes
+* Conditional branching (approve/reject logic)
+* Workflow persistence using local storage or backend
+* Enhanced node configuration panel
+
+---
+
+## Author
+
+Sania Tanweer
+
