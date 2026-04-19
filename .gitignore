@@ -7,18 +7,53 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Build output
 dist
 dist-ssr
-*.local
+build/
+coverage
+*.lcov
 
-# Editor directories and files
+# Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.npm
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+.nyc_output
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# IDE
 .vscode/*
 !.vscode/extensions.json
+.vscode-test
 .idea
 .DS_Store
+
+# OS
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

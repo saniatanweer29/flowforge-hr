@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -71,3 +72,7 @@ export default defineConfig([
   },
 ])
 ```
+=======
+# flowforge-hr
+Interactive HR workflow designer built with React Flow featuring drag-and-drop nodes, workflow simulation, and JSON import/export.
+>>>>>>> 43254091f75654d75f96b1bdf2c284f03631ee96
