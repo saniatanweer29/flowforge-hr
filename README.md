@@ -1,6 +1,4 @@
-Good instinct—this is the right time to **upgrade your README**, not add more features.
 
-Here’s a **detailed, professional version** (clean, no emojis, structured like real projects):
 
 ---
 
