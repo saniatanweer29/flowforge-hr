@@ -4,7 +4,7 @@
 
 # HR Workflow Designer
 
-HR Workflow Designer is an interactive, node-based workflow builder that allows users to design, connect, and simulate HR processes visually. The application is built using React Flow and demonstrates graph-based UI design, state management, and workflow execution logic.
+HR Workflow Designer is an interactive, node-based workflow builder built using React Flow. It enables users to visually design, connect, and simulate HR processes with real-time execution and JSON import/export capabilities.
 
 ---
 
